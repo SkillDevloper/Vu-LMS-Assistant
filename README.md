@@ -9,7 +9,7 @@ A Simple Tool for Vu LMS Users  This extension helps Vu LMS (Virtual University 
 - Easy Access: Integrates directly into your browser as a Chrome Extension.
   
 # Installation
-https://github.com/SkillDevloper/Vu-LMS-Assistant.git
+git-clone https://github.com/SkillDevloper/Vu-LMS-Assistant.git
 
 1. Steps to Install the Extension:
 2. Download the extension zip file from this repository.
