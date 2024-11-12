@@ -9,6 +9,8 @@ A Simple Tool for Vu LMS Users  This extension helps Vu LMS (Virtual University 
 - Easy Access: Integrates directly into your browser as a Chrome Extension.
   
 # Installation
+https://github.com/SkillDevloper/Vu-LMS-Assistant.git
+
 1. Steps to Install the Extension:
 2. Download the extension zip file from this repository.
 3. Open Chrome and go to the Extensions page (chrome://extensions/).
@@ -16,7 +18,8 @@ A Simple Tool for Vu LMS Users  This extension helps Vu LMS (Virtual University 
 5. Click Load unpacked and select the folder where you extracted the extension files.
 - The extension will now be added to your Chrome browser and ready to use.
 
-#Usage
+# Usage
+
 - Login to Vu LMS (https://vulms.vu.edu.pk).
 - Once you are logged in, the extension will automatically function on the supported pages.
 - To log out or change your ID, simply log out from Vu LMS.
