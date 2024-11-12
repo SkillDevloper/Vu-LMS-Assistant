@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS Assistant by Daniyal Shahid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="popup">
+            <div class="Welcome-heading flex-c2">
+                <div class="b1">
+                    <h2 class="label">Student Name</h2>
+                    <h3 class="label" id="StName">Loading...</h3>
+                    <br>
+                    <h2 class="label">Student ID</h2>
+                    <h3 class="label" id="StId">Loading...</h3>
+                </div>
+                <div class="b1">
+                    <img id="userImage" src="" alt="User Image" class="image" title="Student Image">
+                </div>
+            </div>
+
+
+            <div class="btns ">
+                <button id="bypass-video" class="btn btn--full"><i class="fa-solid fa-eye"></i> Mark Video As
+                    Viewed</button>
+                <button id="allow-events" class="btn btn--full"><i class="fa-solid fa-copy"></i> Enable Quiz Copy
+                    Paste</button>
+                <button id="gdb-copy-paste" class="btn btn--full hidden" disabled><i class="fa-solid fa-copy"></i> GDB
+                    Copy Paste Enabled</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="Contact-text center">
+                <p>Contact Us For More Content</p>
+                <div class="icons flex-c">
+                    <a href="https://wa.me/+923153201543" target="_blank">
+                        <i class="fa-brands fa-whatsapp" title="Contact Us on Whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/itx_danial_here/" target="_blank">
+                        <i class="fa-brands fa-instagram" title="Follow on Instagram"></i>
+                    </a>
+
+                    <a href="https://skilldevloper.github.io/Skill-Developer/" target="_blank">
+                        <i class="fa-solid fa-earth-americas" title="Visit Website For More Content"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="copyright center">This Extension is Developed by Skill Developer</p>
+            <p class="center">Version: <span id="version-string">N/A</span></p>
+
+        </footer>
+    </div>
+    <script type="module" src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+body,
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Helvetica Neue", "Ubuntu";
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 350px;
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.244), rgba(0, 0, 0, 0.699)), url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 0 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #5867DD;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn.hidden {
+    display: none;
+}
+
+.btn:disabled {
+    opacity: 0.7;
+    cursor: default;
+}
+
+.btn:not(:disabled):hover {
+    background-color: #4c5ac1;
+}
+
+.btn.btn--full {
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+#StName,
+#StId {
+    margin-left: 10px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+footer p {
+    margin: 0 0;
+}
+
+.Welcome-heading #userImage {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+    border: 2px solid white;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-c2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btns {
+    gap: 10px;
+}
+
+footer {
+    margin: 10px 0;
+}
+
+footer a {
+    color: white;
+    margin: 0 15px;
+}
+
+footer .icons {
+    padding: 10px 0;
+}
+
+footer .icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform .2s cubic-bezier(0.4, 0, 1, 1);
+
+    &:hover {
+        color: #5867DD;
+    }
+}

@@ -1,0 +1,76 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "manifest_version": 3,
+  "name": "Vu LMS Assistant by Skill Developer",
+  "version": "1.0.1",
+  "description": "A Simple 'LMS Bypass Extension' Complete All Lecture view system also coping and pasting for Quiz/Gdb. Enable copy paste on quiz and gdb pages, mark lesson videos as viewed, and bypass VU quiz firewall.",
+  "minimum_chrome_version": "101",
+  "action": {
+    "default_icon": "./icon-16.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "./icon-16.png",
+    "48": "./icon-48.png",
+    "128": "./icon-48.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "contextMenus",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "*://*.vu.edu.pk/*",
+    "*://vu-db-worker.gptquiz.workers.dev/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ua_rules",
+        "enabled": true,
+        "path": "ua_rules.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.vu.edu.pk/FormativeAssessment/FAQuizQuestions.aspx?*",
+        "*://*.vu.edu.pk/Quiz/QuizQuestion.aspx?*",
+        "*://vulms.vu.edu.pk/GDB/StudentMessage.aspx*"
+      ],
+      "js": [
+        "content_script.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "*://*.vu.edu.pk/*"
+      ],
+      "js": [
+        "content_script_2.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
